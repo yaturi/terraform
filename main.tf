@@ -1,3 +1,8 @@
-resource "instnace" "ec2_instance" {
+resource "aws_vpc" "vpc-terraform" {
+    cidr_block = "10.0.0.0/16"
+
+    tags = {
+        Name = "terraform-vpc"
+    }
   
 }
